@@ -1,6 +1,6 @@
 var isObjectId = require('../../lib/isObjectId');
 var db = require('../../db');
-var User = db.model('User');
+var User = db.model('Request');
 var canModify = ['name', 'description'];
 
 module.exports = function(req, res, next) {

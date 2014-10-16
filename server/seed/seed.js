@@ -5,7 +5,7 @@ var join = require('path').join;
 var modelDir = join(__dirname, '../models/*');
 var db = goose(config.database, modelDir);
 var seeds = {
-  User: require('./User')
+  Request: require('./Request')
 };
 
 var seed = new seedling(db, seeds, {
