@@ -7,7 +7,7 @@ module.exports = function(req, res, next) {
   if (typeof req.params.id !== 'string') {
     return next(new Error('Invalid id parameter'));
   }
-    q = Request.findOne({
+    q = Request.find({
       location: req.params.id
     });
   return q.exec(function(err, location) {
